@@ -19,6 +19,7 @@
 
     <title>Frontend Mentor | QR code component</title>
     <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
                   body {
@@ -36,10 +37,16 @@
                     text-align: center;
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
-        font-weight: bold;
+        /* font-weight: bold;
         font-style: normal;
         line-height: 120%;
-        letter-spacing: 0px;
+        letter-spacing: 0px; */
+        color: var(--color-slate-900, #1F314F);
+font-size: 22px;
+
+font-weight: 700;
+line-height: 26.40px;
+word-wrap: break-word;
       }
           
       .attribution .regular {
@@ -47,11 +54,16 @@
                     text-align: center;
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
-        font-weight:normal;
+        /* font-weight:normal;
         font-style: normal;
         line-height: 140%;
         letter-spacing: 0.2px;
+        color: var(--color-slate-500, #68778D); */
         color: var(--color-slate-500, #68778D);
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.20px;
+        word-wrap: break-word
       }
                   .attribution a {
                     color: hsl(228, 45%, 44%);
@@ -61,31 +73,46 @@
                     padding: var(--spacing-200, 16px) var(--spacing-200, 16px)
                       var(--spacing-500, 40px) var(--spacing-200, 16px);
                     flex-direction: column;
-                    align-items: flex-start;
-                    gap: spacing-300, 24px);
+                    align-items:center;
+                    justify-content: center;
+                    align-content: space-evenly;
+                    gap: spacing-300, 24px;
                     border-radius: 20px;
                     background: var(--color-white, #fff);
-                    width: 288px;px ;
+                    width: 288px;
                     height: 443px;
-
+                    margin-bottom: 24px;
                     /* card-shadow */
                     box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+                    border-radius: 20px;
                   }
 
                   .attribution img {
                     width: 288px;
                     height: auto;
+                    position: relative; 
+                    background: var(--color-blue-600, #2C7DFA); 
+                    overflow: hidden; 
+                    border-radius: 10px"
+                  }
+
+                  .text-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-content:space-evenly ;
                   }
     </style>
   </head>
   <body>
     <div class="attribution">
-      <img src="/images/image-qr-code.png" alt="" />
-      <p class="bold">Improve your front-end skills by building projects</p>
+      <img src="/images/image-qr-code.png" class="rounded-md"style="margin: bottom 24px;" />
+    <div class="text-box">
+     <p class="bold">Improve your front-end skills by building projects</p>
       <p class="regular">
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
-      </p>
+      </p> 
+    </div>
       <!-- Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
