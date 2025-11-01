@@ -28,5 +28,6 @@ body {
 }
 
 img {
-    
+    width: 288px;
+    height: auto;
 }
